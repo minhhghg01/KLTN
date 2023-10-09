@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from './navbar';
-import { LaptopOutlined, NotificationOutlined, UserOutlined } from '@ant-design/icons';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import TkbComponent from './tkb';
 import { useNavigate } from "react-router-dom";
-  
+import Default from '../layout/Default';
 
 const { Header, Content, Sider } = Layout;
 const items1 = ['1', '2', '3'].map((key) => ({
@@ -39,27 +37,8 @@ const App = () => {
   };
 
   return (
-    <Layout>
-      <Navbar />
-      <Layout>
-        <Sider
-        width={200}
-        height={'100%'}
-        style={{
-          background: colorBgContainer,
-        }}
-      >
-        <Menu
-          mode="inline"
-          style={{
-            height: '100%',
-            borderRight: 0,
-          }}
-          items={items2}
-          onClick={onClick}
-        />
-      </Sider>
-        <Content
+    <Default>
+        {/* <Content
           style={{
             padding: 24,
             margin: 0,
@@ -68,10 +47,10 @@ const App = () => {
             height: '95vh',
           }}
         >
-          <TkbComponent />
-        </Content>
-      </Layout>
-    </Layout>
+          
+        </Content> */}
+        <TkbComponent />
+    </Default>
   );
 };
 export default App;

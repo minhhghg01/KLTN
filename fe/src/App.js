@@ -1,4 +1,5 @@
 import HomeComponent from "./component/home";
+import LoginComponent from "./component/auth/login";
 import {
   createBrowserRouter,
   createRoutesFromElements,
@@ -10,7 +11,8 @@ import {
 function App() {
   return (
     <Routes>
-        <Route path="/tkb" element={<HomeComponent />} />
+      <Route path="/Login" element={<LoginComponent />} />
+      <Route path="/tkb" element={<HomeComponent />} />
     </Routes>
     
   );

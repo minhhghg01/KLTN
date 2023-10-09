@@ -45,7 +45,7 @@ function Navbar() {
             onClick={handleIconClick}
           >
             <img
-              src="https://salt.tikicdn.com/ts/upload/e4/49/6c/270be9859abd5f5ec5071da65fab0a94.png"
+              src="/image/ming.jpg"
               alt="tikiLogo"
             />
           </div>
