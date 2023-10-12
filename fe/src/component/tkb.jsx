@@ -2,9 +2,20 @@ import { Layout, Table } from "antd"
 import { DatePicker } from "antd";
 import dayjs from 'dayjs';
 import {Button} from "antd";
+import React, { useState, useEffect } from 'react';
 
 export default function TkbComponent() {
     const dateFormat= 'DD/MM/YYYY'
+    // const [today, setToday] = useState(null);
+
+  // useEffect(() => {
+  //   const date = new Date();
+  //   const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+  //   setToday(formattedDate);
+  // }, []);
+
+  const today = dayjs().format(dateFormat);
+
     const conlums = [
         {
             title: 'Tiết', dataIndex: 'tiet', key: 'tiet'
@@ -71,19 +82,22 @@ export default function TkbComponent() {
         {
             tiet: 'ca 1 8-10h',
             phongs:[
-              {phong:'phong5',lop:'Lớp 1'},
-              {phong:'phong4',lop:'lop2'},
+              {phong:'phong5',lop:'Lớp 1 - Toán - Ming'},
+              {phong:'phong4',lop:'Lớp 2 - Hóa - Mig'},
+              {phong:'phong3',lop:'Lớp 3 - Hóa - Min'},
+              {phong:'phong2',lop:'Lớp 2 - Hóa - Mih'},
+              {phong:'phong1',lop:'Lớp 1 - Hóa - Mik'},
             ],
         },
         {
-            tiet: 'ca 2 13-15h',
+            tiet: 'ca 2 14-16h',
             phongs:[
                 {phong:'phong1',lop:'lop1'},
                 {phong:'phong4',lop:'lop2'},
               ],
         },
         {
-            tiet: 'ca 3 15-17h',
+            tiet: 'ca 3 16-18h',
             phongs:[
                 {phong:'phong1',lop:'lop1'},
                 {phong:'phong4',lop:'lop2'},
@@ -122,11 +136,12 @@ export default function TkbComponent() {
           return res;
     }
 
+    
     return (
         <Layout>
             <div>
                 <Button></Button>
-                <DatePicker defaultValue={dayjs('01/01/2015', dateFormat)} format={dateFormat} />
+                <DatePicker defaultValue={dayjs(today, dateFormat)} format={dateFormat} />
                 <Button></Button>
             </div>
             <Table dataSource={data} columns={conlums} />

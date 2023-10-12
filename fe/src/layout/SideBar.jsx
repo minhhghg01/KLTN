@@ -14,7 +14,7 @@ const SideBar = (props) => {
       <div onClick={onClick}>
         {open ? (
           <img
-            src="/image/logo.png"
+            src="/image/logo.jpg"
             alt="logo"
             className="h-8 md:h-8 lg:h-16 mx-auto w-[140px] mt-[10px]"
           />
@@ -38,7 +38,7 @@ const SideBar = (props) => {
                 }
               >
                 <img
-                  src="/image/kho.png"
+                  src="/image/ming.jpg"
                   alt="kho"
                   className={`w-4 md:w-4 lg:w-6 ${!open && 'mx-auto'}`}
                 />
@@ -57,7 +57,7 @@ const SideBar = (props) => {
                 }
               >
                 <img
-                  src="/image/daily.png"
+                  src="/image/ming.jpg"
                   alt="kho"
                   className={`w-4 md:w-4 lg:w-6 ${!open && 'mx-auto'}`}
                 />
@@ -68,7 +68,7 @@ const SideBar = (props) => {
                 )}
               </Link>
               <Link
-                to="/request"
+                to="/qlgv"
                 className={
                   tag !== 'yc'
                     ? 'flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -76,7 +76,7 @@ const SideBar = (props) => {
                 }
               >
                 <img
-                  src="/image/request.png"
+                  src="/image/ming.jpg"
                   alt="kho"
                   className={`w-4 md:w-4 lg:w-6 ${!open && 'mx-auto'}`}
                 />
@@ -87,7 +87,7 @@ const SideBar = (props) => {
                 )}
               </Link>
               <Link
-                to="/productline"
+                to="/qlhs"
                 className={
                   tag !== 'dsp'
                     ? 'flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
@@ -95,7 +95,7 @@ const SideBar = (props) => {
                 }
               >
                 <img
-                  src="/image/kho.png"
+                  src="/image/ming.jpg"
                   alt="dsp"
                   className={`w-4 md:w-4 lg:w-6 ${!open && 'mx-auto'}`}
                 />

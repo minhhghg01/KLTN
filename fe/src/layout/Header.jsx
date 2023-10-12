@@ -26,7 +26,7 @@ const Header = (props) => {
         <Dropdown menu={{ items }} className="mx-5 my-auto">
           <a onClick={(e) => e.preventDefault()}>
             <Space>
-              <Avatar src='/image/ming.jpg' className="cursor-pointer" size="large" />
+              <Avatar src='/image/avt.jpg' className="cursor-pointer" size="large" />
               <DownOutlined />
             </Space>
           </a>
