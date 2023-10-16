@@ -12,7 +12,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
+    <div style={{background: 'linear-gradient(#141e30, #243b55)'}}> 
       <picture>
         <source srcSet="/image/ming.jpg" media="(min-width: 1000px)" />
         <img src="#" style={{ height: '100vh' }} alt="Background" />

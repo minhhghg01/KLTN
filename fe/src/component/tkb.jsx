@@ -3,74 +3,85 @@ import { DatePicker } from "antd";
 import dayjs from 'dayjs';
 import {Button} from "antd";
 import React, { useState, useEffect } from 'react';
+import TableInfo from './table/Table';
 
 export default function TkbComponent() {
     const dateFormat= 'DD/MM/YYYY'
-    // const [today, setToday] = useState(null);
-
-  // useEffect(() => {
-  //   const date = new Date();
-  //   const formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
-  //   setToday(formattedDate);
-  // }, []);
 
   const today = dayjs().format(dateFormat);
 
     const conlums = [
         {
-            title: 'Tiết', dataIndex: 'tiet', key: 'tiet'
+            title: 'Thời gian', dataIndex: 'tiet', key: 'tiet', align: 'center',
         },
         {
-            title: 'Phòng 1',
-            key: 'phong1',
+            title: 'Thứ 2',
+            key: 'thu2',
+            align: 'center',
             render: (_, record = {}) => {
-              const phong1Data = record.phongs.find(e => e.phong === 'phong1');
-              if (phong1Data) {
-                return <p>{phong1Data.lop}</p>;
+              const thu2Data = record.phongs.find(e => e.phong === 'thu2');
+              if (thu2Data) {
+                return <p>{thu2Data.lop}</p>;
               }
               return <></>;
             }
           },
           {
-            title: 'Phòng 2',
-            key: 'phong2',
+            title: 'Thứ 3',
+            key: 'thu3',
+            align: 'center',
             render: (_, record = {}) => {
-              const phong2Data = record.phongs.find(e => e.phong === 'phong2');
-              if (phong2Data) {
-                return <p>{phong2Data.lop}</p>;
+              const thu3Data = record.phongs.find(e => e.phong === 'thu3');
+              if (thu3Data) {
+                return <p>{thu3Data.lop}</p>;
               }
               return <></>;
             }
           },
           {
-            title: 'Phòng 3',
-            key: 'phong3',
+            title: 'Thứ 4',
+            key: 'thu4',
+            align: 'center',
             render: (_, record = {}) => {
-              const phong3Data = record.phongs.find(e => e.phong === 'phong3');
-              if (phong3Data) {
-                return <p>{phong3Data.lop}</p>;
+              const thu4Data = record.phongs.find(e => e.phong === 'thu4');
+              if (thu4Data) {
+                return <p>{thu4Data.lop}</p>;
               }
               return <></>;
             }
           },
           {
-            title: 'Phòng 4',
-            key: 'phong4',
+            title: 'Thứ 5',
+            key: 'thu5',
+            align: 'center',
             render: (_, record = {}) => {
-              const phong4Data = record.phongs.find(e => e.phong === 'phong4');
-              if (phong4Data) {
-                return <p>{phong4Data.lop}</p>;
+              const thu5Data = record.phongs.find(e => e.phong === 'thu5');
+              if (thu5Data) {
+                return <p>{thu5Data.lop}</p>;
               }
               return <></>;
             }
           },
           {
-            title: 'Phòng 5',
-            key: 'phong5',
+            title: 'Thứ 6',
+            key: 'thu6',
+            align: 'center',
             render: (_, record = {}) => {
-              const phong5Data = record.phongs.find(e => e.phong === 'phong5');
-              if (phong5Data) {
-                return <p>{phong5Data.lop}</p>;
+              const thu6Data = record.phongs.find(e => e.phong === 'thu6');
+              if (thu6Data) {
+                return <p>{thu6Data.lop}</p>;
+              }
+              return <></>;
+            }
+          },
+          {
+            title: 'Thứ 7',
+            key: 'thu7',
+            align: 'center',
+            render: (_, record = {}) => {
+              const thu7Data = record.phongs.find(e => e.phong === 'thu7');
+              if (thu7Data) {
+                return <p>{thu7Data.lop}</p>;
               }
               return <></>;
             }
@@ -79,38 +90,40 @@ export default function TkbComponent() {
     ]
 
     const data = [
-        {
-            tiet: 'ca 1 8-10h',
-            phongs:[
-              {phong:'phong5',lop:'Lớp 1 - Toán - Ming'},
-              {phong:'phong4',lop:'Lớp 2 - Hóa - Mig'},
-              {phong:'phong3',lop:'Lớp 3 - Hóa - Min'},
-              {phong:'phong2',lop:'Lớp 2 - Hóa - Mih'},
-              {phong:'phong1',lop:'Lớp 1 - Hóa - Mik'},
-            ],
-        },
-        {
-            tiet: 'ca 2 14-16h',
-            phongs:[
-                {phong:'phong1',lop:'lop1'},
-                {phong:'phong4',lop:'lop2'},
-              ],
-        },
-        {
-            tiet: 'ca 3 16-18h',
-            phongs:[
-                {phong:'phong1',lop:'lop1'},
-                {phong:'phong4',lop:'lop2'},
-              ],
-        },
-        {
-            tiet: 'ca 4 19-21h ',
-            phongs:[
-                {phong:'phong1',lop:'lop1'},
-                {phong:'phong4',lop:'lop2'},
-              ],
-        }
-    ]
+      {
+        tiet: <p>Ca 1 <br /> 8 - 10h</p>,
+        phongs: [
+          { phong: 'thu2', lop: <p> Lớp 1 - Toán <br /> Jony - 101 </p>, giaoVien: 'Jony' },
+          { phong: 'thu3', lop: 'Lớp 2 - Lý - Anna - 101', giaoVien: 'Anna' },
+          { phong: 'thu4', lop: 'Lớp 3 - Hóa - Peter - 101', giaoVien: 'Peter' },
+          { phong: 'thu5', lop: 'Lớp 5 - Toán - Sarah - 101', giaoVien: 'Sarah' },
+          { phong: 'thu6', lop: 'Lớp 4 - Lý - Michael - 101', giaoVien: 'Michael' },
+          { phong: 'thu7', lop: 'Lớp 4 - Lý - Michael - 101', giaoVien: 'Michael' },
+        ],
+      },
+      {
+        tiet: 'ca 2 14-16h',
+        phongs: [
+          { phong: 'thu2', lop: 'Lớp 1 - Toán - Jony', giaoVien: 'Jony' },
+          { phong: 'thu5', lop: 'Lớp 2 - Hóa - Sarah', giaoVien: 'Sarah' },
+        ],
+      },
+      {
+        tiet: 'ca 3 16-18h',
+        phongs: [
+          { phong: 'thu3', lop: 'Lớp 2 - Lý - Anna', giaoVien: 'Anna' },
+          { phong: 'thu4', lop: 'Lớp 3 - Hóa - Peter', giaoVien: 'Peter' },
+        ],
+      },
+      {
+        tiet: 'ca 4 19-21h',
+        phongs: [
+          { phong: 'thu2', lop: 'Lớp 1 - Toán - Jony', giaoVien: 'Jony' },
+          { phong: 'thu6', lop: 'Lớp 4 - Lý - Michael', giaoVien: 'Michael' },
+        ],
+      }
+    ];
+    
 
     const converdata = (data) => {
         const res = [
@@ -139,12 +152,7 @@ export default function TkbComponent() {
     
     return (
         <Layout>
-            <div>
-                <Button></Button>
-                <DatePicker defaultValue={dayjs(today, dateFormat)} format={dateFormat} />
-                <Button></Button>
-            </div>
-            <Table dataSource={data} columns={conlums} />
+            <Table style={{ textAlign: 'center' }} dataSource={data} columns={conlums}  />
         </Layout>
     )
 }

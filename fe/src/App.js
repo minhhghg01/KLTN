@@ -21,7 +21,7 @@ function App() {
       <Route path="/qlgv" element={<QLGV />} />
       <Route path="/qlhs" element={<QLHS />} />
       <Route path="/score" element={<Score />} />
-      <Route path="/qlhs/add" element={<AddStudent />} />
+      <Route path="/qlsv/add" element={<AddStudent />} />
     </Routes>
     
   );
