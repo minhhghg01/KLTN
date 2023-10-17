@@ -258,7 +258,7 @@ const qlhs = (props) => {
     <div className="w-full">
       <Default tagName="dsp">
         {/* <SearchProductLine /> */}
-        <Link to="/qlsv/add">add</Link>
+        <Link to="/qlhs/add">add</Link>
         <div className="mt-5">
           <TableInfo
             dataColumn={dataColumn}

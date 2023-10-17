@@ -76,13 +76,13 @@ const AddStudent = () => {
             initialValues={{ remember: true }}
           >
             <Form.Item
-              label="Tên dòng xe"
+              label="Tên học viên"
               type="text"
               name="name"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your name!',
+                  message: 'Vui lòng nhập Tên của học viên!',
                 },
               ]}
             >
@@ -108,13 +108,13 @@ const AddStudent = () => {
               />
             </Form.Item> */}
             <Form.Item
-              label="Mã dòng sản phẩm"
+              label="Họ và tên đệm học viên"
               type="text"
               name="code"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your code!',
+                  message: 'Vui lòng nhập Họ và tên đệm của học viên!',
                 },
               ]}
             >
@@ -122,13 +122,13 @@ const AddStudent = () => {
             </Form.Item>
             {/* Khối lượng bản thân */}
             <Form.Item
-              label="Khối lượng bản thân"
+              label="Lớp"
               name="weight"
               type="text"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your weight!',
+                  message: 'Vui lòng nhập Lớp của học viên!',
                 },
               ]}
             >
@@ -136,22 +136,22 @@ const AddStudent = () => {
             </Form.Item>
             {/* Dài */}
             <Form.Item
-              label="Dài"
+              label="Email"
               name="length"
               type="text"
-              rules={[{ required: true, message: 'Please input your length!' }]}
+              rules={[{ required: true, message: 'Vui lòng nhập Email của học viên!' }]}
             >
               <Input name="length" placeholder="input placeholder" />
             </Form.Item>
             {/* Rộng */}
             <Form.Item
-              label="Rộng"
+              label="SĐT học viên"
               name="width"
               type="text"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your width!',
+                  message: 'Vui lòng nhập SĐT của học viên!',
                 },
               ]}
             >
@@ -159,139 +159,19 @@ const AddStudent = () => {
             </Form.Item>
             {/* Cao */}
             <Form.Item
-              label="Cao"
+              label="SĐT phụ huynh"
               name="height"
               type="text"
               rules={[
                 {
                   required: true,
-                  message: 'Please input your height!',
+                  message: 'Vui lòng nhập SĐT phụ huynh của học viên!',
                 },
               ]}
             >
               <Input name="height" placeholder="input placeholder" />
             </Form.Item>
-            {/* Khoảng cách trục bánh xe  */}
-            <Form.Item
-              label="Khoảng cách trục bánh xe "
-              name="wheelAxleDistance"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your wheelAxleDistance!',
-                },
-              ]}
-            >
-              <Input name="wheelAxleDistance" placeholder="input placeholder" />
-            </Form.Item>
-            {/* Chiều cao yên xe */}
-            <Form.Item
-              label="Chiều cao yên xe"
-              name="saddleHeight"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your saddleHeight!',
-                },
-              ]}
-            >
-              <Input name="saddleHeight" placeholder="input placeholder" />
-            </Form.Item>
-            {/* Khoảng cách gầm xe */}
-            <Form.Item
-              label="Khoảng cách gầm xe"
-              name="groundClearance"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your groundClearance!',
-                },
-              ]}
-            >
-              <Input name="groundClearance" placeholder="input placeholder" />
-            </Form.Item>
-            {/* Dung tích bình xăng */}
-            <Form.Item
-              label="Dung tích bình xăng"
-              name="petrolTankCapacity"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your petrolTankCapacity!',
-                },
-              ]}
-            >
-              <Input
-                name="petrolTankCapacity"
-                placeholder="input placeholder"
-              />
-            </Form.Item>
-            {/* Mức tiêu thụ nhiên liệu */}
-            <Form.Item
-              label="Mức tiêu thụ nhiên liệu"
-              name="fuelConsumption"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your fuelConsumption!',
-                },
-              ]}
-            >
-              <Input name="fuelConsumption" placeholder="input placeholder" />
-            </Form.Item>
-            {/* Dung tích xy-lanh */}
-            <Form.Item
-              label="Dung tích xy-lanh"
-              name="displacementVolume"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your displacementVolume!',
-                },
-              ]}
-            >
-              <Input
-                name="displacementVolume"
-                placeholder="input placeholder"
-              />
-            </Form.Item>
-            {/* Loại động cơ */}
-            <Form.Item
-              label="Loại động cơ"
-              name="engineType"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your engineType!',
-                },
-              ]}
-            >
-              <Input name="engineType" placeholder="input placeholder" />
-            </Form.Item>
-            <Form.Item
-              label="Thời gian bảo hành"
-              name="period"
-              type="text"
-              rules={[
-                {
-                  required: true,
-                  message: 'Please input your engineType!',
-                },
-              ]}
-            >
-              <Input
-                name="period"
-                placeholder="input placeholder"
-                addonAfter={selectAfter}
-              />
-            </Form.Item>
+            
             <Upload
               // action="https://www.mocky.io/v2/5cc8019d300000980a055e76"
               listType="picture-card"

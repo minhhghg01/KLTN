@@ -93,36 +93,85 @@ export default function TkbComponent() {
       {
         tiet: <p>Ca 1 <br /> 8 - 10h</p>,
         phongs: [
-          { phong: 'thu2', lop: <p> Lớp 1 - Toán <br /> Jony - 101 </p>, giaoVien: 'Jony' },
-          { phong: 'thu3', lop: 'Lớp 2 - Lý - Anna - 101', giaoVien: 'Anna' },
-          { phong: 'thu4', lop: 'Lớp 3 - Hóa - Peter - 101', giaoVien: 'Peter' },
-          { phong: 'thu5', lop: 'Lớp 5 - Toán - Sarah - 101', giaoVien: 'Sarah' },
-          { phong: 'thu6', lop: 'Lớp 4 - Lý - Michael - 101', giaoVien: 'Michael' },
-          { phong: 'thu7', lop: 'Lớp 4 - Lý - Michael - 101', giaoVien: 'Michael' },
+          { 
+            phong: 'thu2', 
+            lop: <p> Lớp 1 - Toán <br /> Jony - 101 </p>, 
+            giaoVien: 'Jony' 
+          },
+          { 
+            phong: 'thu3', 
+            lop: <p> Lớp 2 - Lý <br /> Anna - 101 </p>, 
+            giaoVien: 'Anna' 
+          },
+          { 
+            phong: 'thu4', 
+            lop: <p> Lớp 3 - Hóa <br /> Peter - 101 </p>, 
+            giaoVien: 'Peter' 
+          },
+          { 
+            phong: 'thu5', 
+            lop: <p> Lớp 5 - Toán <br /> Sarah - 101 </p>, 
+            giaoVien: 'Sarah' 
+          },
+          { 
+            phong: 'thu6', 
+            lop: <p> Lớp 4 - Lý <br /> Michael - 101 </p>, 
+            giaoVien: 'Michael' 
+          },
+          { 
+            phong: 'thu7', 
+            lop: <p> Lớp 4 - Lý <br /> Michael - 101 </p>, 
+            giaoVien: 'Michael' 
+          },
         ],
       },
       {
-        tiet: 'ca 2 14-16h',
+        tiet: <p>Ca 2 <br /> 14 - 16h</p>,
         phongs: [
-          { phong: 'thu2', lop: 'Lớp 1 - Toán - Jony', giaoVien: 'Jony' },
-          { phong: 'thu5', lop: 'Lớp 2 - Hóa - Sarah', giaoVien: 'Sarah' },
+          { 
+            phong: 'thu2', 
+            lop: <p> Lớp 1 - Toán <br /> Jony - 101 </p>, 
+            giaoVien: 'Jony' 
+          },
+          { 
+            phong: 'thu5', 
+            lop: <p> Lớp 2 - Hóa <br /> Sarah - 101 </p>, 
+            giaoVien: 'Sarah' 
+          },
         ],
       },
       {
-        tiet: 'ca 3 16-18h',
+        tiet: <p>Ca 3 <br /> 16 - 18h</p>,
         phongs: [
-          { phong: 'thu3', lop: 'Lớp 2 - Lý - Anna', giaoVien: 'Anna' },
-          { phong: 'thu4', lop: 'Lớp 3 - Hóa - Peter', giaoVien: 'Peter' },
+          { 
+            phong: 'thu3', 
+            lop: <p> Lớp 2 - Lý <br /> Anna - 101 </p>, 
+            giaoVien: 'Anna' 
+          },
+          { 
+            phong: 'thu4', 
+            lop: <p> Lớp 3 - Hóa <br /> Peter - 101 </p>, 
+            giaoVien: 'Peter' 
+          },
         ],
       },
       {
-        tiet: 'ca 4 19-21h',
+        tiet: <p>Ca 4 <br /> 19 - 21h</p>,
         phongs: [
-          { phong: 'thu2', lop: 'Lớp 1 - Toán - Jony', giaoVien: 'Jony' },
-          { phong: 'thu6', lop: 'Lớp 4 - Lý - Michael', giaoVien: 'Michael' },
+          { 
+            phong: 'thu2', 
+            lop: <p> Lớp 1 - Toán <br /> Jony - 101 </p>, 
+            giaoVien: 'Jony' 
+          },
+          { 
+            phong: 'thu6', 
+            lop: <p> Lớp 4 - Lý <br /> Michael - 101 </p>, 
+            giaoVien: 'Michael' 
+          },
         ],
       }
     ];
+    
     
 
     const converdata = (data) => {
