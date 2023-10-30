@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Default from '../../layout/Default';
 // import { useNavigate } from 'react-router-dom';
-import TableInfo from '../table/Table';
+import TableInfo from '../../component/table/Table';
 
 
 const qlgv = (props) => {

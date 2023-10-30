@@ -105,6 +105,25 @@ const SideBar = (props) => {
                   </span>
                 )}
               </Link>
+              <Link
+                to="/test"
+                className={
+                  tag !== 'tk'
+                    ? 'flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700'
+                    : 'flex items-center p-2 text-base font-normal text-gray-900 rounded-lg bg-[#e6f4ff]'
+                }
+              >
+                <img
+                  src="/image/kho.png"
+                  alt="kho"
+                  className={`w-4 md:w-4 lg:w-6 ${!open && 'mx-auto'}`}
+                />
+                {open && (
+                  <span className="ml-3 text-xs sm:text-sm md:text-base">
+                    Làm bài ktra
+                  </span>
+                )}
+              </Link>
             </li>
           {/* )} */}
 

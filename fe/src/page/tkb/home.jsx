@@ -2,8 +2,8 @@ import React from 'react';
 import { Breadcrumb, Layout, Menu, theme } from 'antd';
 import TkbComponent from './tkb';
 import { useNavigate } from "react-router-dom";
-import Default from '../layout/Default';
-import qlgv from './QLGV/QLGV';
+import Default from '../../layout/Default';
+import qlgv from '../QLGV/QLGV';
 
 const App = () => {
   const {

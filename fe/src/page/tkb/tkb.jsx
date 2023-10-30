@@ -3,7 +3,7 @@ import { DatePicker } from "antd";
 import dayjs from 'dayjs';
 import {Button} from "antd";
 import React, { useState, useEffect } from 'react';
-import TableInfo from './table/Table';
+import TableInfo from '../../component/table/Table';
 
 export default function TkbComponent() {
     const dateFormat= 'DD/MM/YYYY'

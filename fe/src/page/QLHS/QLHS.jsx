@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Default from '../../layout/Default';
 // import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-import TableInfo from '../table/Table';
+import TableInfo from '../../component/table/Table';
 import { Button } from 'antd';
 
 
@@ -230,29 +230,6 @@ const qlhs = (props) => {
       sdtph: '033303350'
     }
   ];
-//   const navigate = useNavigate();
-
-
-//   const { checkMiddleware } = useAppContext();
-
-//   const dataSource = listProductLine?.map((productline, index) => {
-//     return {
-//       ...productline,
-//       key: index + 1,
-//       createdAt: productline.createdAt.split('T')[0],
-//     };
-//   });
-
-//   useEffect(() => {
-//     checkMiddleware(role, () => {
-//       loadListProductLine();
-//     });
-//   }, []);
-
-// const navigate = useNavigate();
-// const handleClick= () => {
-//     navigate("/qlsv/add");
-// }
 
   return (
     <div className="w-full">
